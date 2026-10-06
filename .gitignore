@@ -1,0 +1,10 @@
+node_modules/
+dist/
+out/
+*.dmg
+*.exe
+*.AppImage
+*.zip
+.DS_Store
+*.DS_Store
+*.localized
