@@ -1,0 +1,28 @@
+{
+  "name": "jarvis-app",
+  "version": "1.2.0",
+  "description": "JARVIS - asistente de voz para macOS. Control de apps, archivos, calendario, clima y control remoto por WhatsApp. Control remoto en el navegador: https://ULTimateJR.github.io/jarvis/remote/",
+  "main": "main.js",
+  "author": "karla.mariposagtz@gmail.com",
+  "license": "ISC",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^32.0.0",
+    "electron-builder": "^25.0.0"
+  },
+  "build": {
+    "appId": "com.local.jarvis",
+    "productName": "JARVIS",
+    "files": [
+      "main.js",
+      "preload.js",
+      "index.html",
+      "renderer.js",
+      "remote/index.html",
+      "build/**/*"
+    ]
+  }
+}
